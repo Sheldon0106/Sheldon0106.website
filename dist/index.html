@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Xiaodong Huang studies trustworthy clinical AI, clinical decision thresholds, causal inference, and multi-agent systems for healthcare.">
+  <meta name="description" content="Xiaodong Huang studies statistical machine learning, clinical decision-making, causal inference, real-world evidence, and trustworthy clinical AI.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sheldon0106.github.io/">
   <meta property="og:title" content="Xiaodong Huang | Clinical AI & Health Data Science">
@@ -49,12 +49,13 @@
     <main id="main" tabindex="-1">
       <section id="research" class="section" aria-labelledby="research-title">
         <h1 id="research-title">Research</h1>
-        <p>My research focuses on trustworthy machine learning for healthcare, particularly emergency care. I study how clinical risk predictions can inform actionable decisions using electronic health records, clinical guidelines, and real-world evidence.</p>
+        <p>My research lies at the intersection of statistics, machine learning, and healthcare. I study how predictive models, real-world evidence, and clinical knowledge can support reliable decisions.</p>
         <h2>Research interests</h2>
+        <p>From predicting risk to understanding when, why, and how to act.</p>
         <ul class="research-list">
-          <li><strong>Clinical prediction and decision thresholds.</strong> Developing and validating sepsis risk models across hospitals, and learning interpretable thresholds that account for clinical behavior and operational capacity.</li>
-          <li><strong>Causal inference and real-world evidence.</strong> Using target trial emulation to study antibiotic timing in emergency sepsis care, including how treatment effects differ across patient phenotypes.</li>
-          <li><strong>Knowledge-guided clinical AI agents.</strong> Connecting clinical guidelines, shared patient state, and multi-agent reasoning to support decisions across the emergency-department sepsis pathway.</li>
+          <li><strong>Statistical learning and clinical decision-making.</strong> Developing interpretable prediction methods that transfer across settings and connect risk estimates with clinical actions and resource constraints.</li>
+          <li><strong>Causal inference and real-world evidence.</strong> Studying treatment strategies, patient heterogeneity, and evolving health trajectories through target trial emulation and longitudinal modeling.</li>
+          <li><strong>Knowledge-centric and trustworthy clinical AI.</strong> Integrating clinical guidelines, knowledge graphs, and adaptive reasoning to support decisions under incomplete and changing information.</li>
         </ul>
       </section>
 
@@ -63,27 +64,28 @@
         <p class="contribution-note">* Equal contribution</p>
         <div class="publications-list">
           <article class="publication" data-kind="manuscript">
-            <div class="publication-meta"><span class="year">2026</span><span class="publication-status preparation">In preparation</span></div>
+            <div class="publication-meta"><span class="year">2026</span><span class="publication-status preparation">Submitted · JAMIA</span></div>
             <h3>ActionRef: Learning Reference Thresholds and Guiding Clinical Risk Threshold Selection</h3>
-            <p class="authors"><strong>Huang, X.</strong>, Patel, S., Jin, Y., Mai, X., and Xie, F.</p>
+            <p class="authors"><strong>Huang, X.</strong>, Patel, S., Jin, Y., Mai, X., Chu, C., Hou, J., Puskarich, M. A., and Xie, F.</p>
             <p class="publication-description">Learning behavioral reference thresholds and making clinical operating trade-offs explicit.</p>
             <div class="paper-links"><a href="https://github.com/Sheldon0106/ActionRef" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a><a href="https://sheldon0106.github.io/ActionRef/" target="_blank" rel="noopener noreferrer">Documentation <span aria-hidden="true">↗</span></a></div>
-            <details><summary>My contribution</summary><p>I led a behavior- and capacity-aware framework that maps continuous risk scores to interpretable Low/Mid/High decision tiers, and evaluated its stability in MIMIC-IV-ED and Stanford MC-MED.</p></details>
+            <details><summary>My contribution</summary><p>I developed a general framework that learns reference risk thresholds from observed clinical actions and guides selection under workload constraints. I led multicenter evaluation and packaged the method as reusable Python software.</p></details>
           </article>
           <article class="publication" data-kind="workshop">
             <div class="publication-meta"><span class="year">2026</span><span class="publication-status accepted">Workshop · Accepted</span></div>
             <h3>RADAR: A Guideline-Grounded Multi-Agent System for the Emergency-Department Sepsis Pathway</h3>
             <p class="authors">Jin, Y.*, <strong>Huang, X.*</strong>, Chandu, H. P., Xiong, X., Lin, M., and Xie, F.</p>
             <p class="venue">NeurIPS 2026 Workshop on GenAI4Health · Demonstration Paper Track</p>
-            <details><summary>My contribution</summary><p>As a co-first author, I contributed to a guideline-grounded and graph-guided system that maintains a shared patient state across recognition, treatment, safety, and disposition in emergency sepsis care.</p></details>
+            <div class="paper-links"><a href="https://openreview.net/forum?id=x2pFPT2MUT" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/fengx13/RADAR" target="_blank" rel="noopener noreferrer">Code &amp; demo <span aria-hidden="true">↗</span></a></div>
+            <details><summary>My contribution</summary><p>As a co-first author, I co-developed a guideline-grounded system that connects clinical knowledge graphs with a shared patient state. I built core patient-data and evidence-integration workflows and contributed to the public software package and interactive demo.</p></details>
           </article>
           <article class="publication" data-kind="manuscript">
-            <div class="publication-meta"><span class="year">2025</span><span class="publication-status revision">Under revision · eClinicalMedicine</span></div>
-            <h3>Development and Multicenter External Validation of a Data-Driven Score for Early and Rapid Identification of Sepsis in Emergency Departments</h3>
-            <p class="authors">Jin, Y., <strong>Huang, X.</strong>, Wang, Y., Wacker, D. A., Puskarich, M., and Xie, F.</p>
+            <div class="publication-meta"><span class="year">2026</span><span class="publication-status accepted">Accepted · eClinicalMedicine</span></div>
+            <h3>Development and Multicenter External Validation of a Data-Driven Scoring System for Early and Rapid Identification of Sepsis in Emergency Departments</h3>
+            <p class="authors">Jin, Y., <strong>Huang, X.</strong>, Wang, Y., Wacker, D. A., Puskarich, M. A., and Xie, F.</p>
             <p class="venue">Preprint available on medRxiv</p>
             <div class="paper-links"><a href="https://doi.org/10.1101/2025.09.27.25336784" target="_blank" rel="noopener noreferrer">Preprint <span aria-hidden="true">↗</span></a><a href="https://github.com/Sheldon0106/ESRP_validation" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
-            <details><summary>My contribution</summary><p>I contributed to development and multicenter external validation using more than 2.2 million emergency-department encounters across UMN, BIDMC/MIMIC-IV-ED, and Stanford MC-MED. My work included cohort harmonization and Python and R evaluation pipelines.</p></details>
+            <details><summary>My contribution</summary><p>I co-developed an interpretable sepsis risk score using more than 2.2 million emergency-department encounters. My work included cohort harmonization and model-development and external-validation workflows across UMN, MIMIC-IV-ED, and Stanford MC-MED.</p></details>
           </article>
         </div>
       </section>
@@ -91,15 +93,16 @@
       <section id="experience" class="section" aria-labelledby="experience-title">
         <h2 id="experience-title">Research experience</h2>
         <div class="experience-list">
-          <article class="experience-item"><div class="experience-heading"><h3>Peking University</h3><p class="date">May 2026 — Present</p></div><p class="experience-role">Research collaboration · Dr. Shenda Hong</p><p class="experience-unit">National Institute of Health Data Science</p><p>Target trial emulation of antibiotic timing strategies in emergency-department sepsis, with a focus on time-related bias and heterogeneous treatment effects.</p></article>
-          <article class="experience-item"><div class="experience-heading"><h3>University of Minnesota Twin Cities</h3><p class="date">May 2025 — Present</p></div><p class="experience-role">Research with Dr. Feng Xie</p><p class="experience-unit">Division of Computational Health Sciences</p><p>Clinical machine learning and decision systems for emergency care: sepsis prediction, decision-threshold learning, sepsis phenotyping, and longitudinal multi-agent decision support.</p></article>
-          <article class="experience-item"><div class="experience-heading"><h3>University of Minnesota Twin Cities</h3><p class="date">Nov 2024 — Apr 2025</p></div><p class="experience-role">Research with Dr. Jie Ding</p><p class="experience-unit">School of Statistics</p><p>AI agents for collaborative scientific workflows, biomedical document understanding, and structured knowledge extraction.</p></article>
+          <article class="experience-item"><div class="experience-heading"><h3>National University of Singapore</h3><p class="date">Sep 2026 — Present</p></div><p class="experience-role">Research Assistant · Yu Liu Lab</p><p class="experience-unit">Department of Biomedical Engineering</p><p>Knowledge-centric clinical AI, evidence verification, and adaptive decision-making under incomplete and evolving patient information.</p></article>
+          <article class="experience-item"><div class="experience-heading"><h3>Peking University</h3><p class="date">May 2026 — Present</p></div><p class="experience-role">Research collaboration · Dr. Shenda Hong</p><p class="experience-unit">National Institute of Health Data Science</p><p>Multicenter target trial emulations of hydrocortisone initiation during vasopressor support, alongside statistical and deep learning models of evolving ICU physiology.</p></article>
+          <article class="experience-item"><div class="experience-heading"><h3>University of Minnesota Twin Cities</h3><p class="date">May 2025 — Present</p></div><p class="experience-role">Research with Dr. Feng Xie</p><p class="experience-unit">Division of Computational Health Sciences</p><p>Interpretable clinical prediction, behavior-informed decision-making, LLM-augmented risk scores, and guideline-grounded AI systems. Projects include ActionRef, RADAR, and multicenter sepsis risk prediction.</p></article>
+          <article class="experience-item"><div class="experience-heading"><h3>University of Minnesota Twin Cities</h3><p class="date">Jul 2025 — Oct 2025</p></div><p class="experience-role">Research in Dr. Jie Ding's group, with guidance from Jin Du</p><p class="experience-unit">School of Statistics</p><p>Exploration of AI agents for collaborative scientific workflows, biomedical document understanding, and structured knowledge extraction.</p></article>
         </div>
       </section>
 
       <section id="education" class="section" aria-labelledby="education-title">
         <h2 id="education-title">Education &amp; recognition</h2>
-        <div class="education-block"><h3>B.S. in Statistics</h3><p class="education-university">University of Minnesota Twin Cities</p><p>Minors in Computer Science and Mathematics</p><p class="education-meta">September 2023 — May 2026 <span aria-hidden="true">·</span> GPA 3.92 / 4.00</p></div>
+        <div class="education-block"><h3>B.S. in Statistical Science</h3><p class="education-university">University of Minnesota Twin Cities</p><p>Minor in Computer Science</p><p class="education-meta">September 2023 — May 2026 <span aria-hidden="true">·</span> GPA 3.89 / 4.00</p></div>
         <h3 class="small-heading">Selected honors</h3>
         <ul class="honors"><li><span><strong>Love of Learning Grant</strong><br>The Phi Beta Kappa Society</span><time datetime="2026-06">Jun 2026</time></li><li><span><strong>Elected Member</strong><br>The Phi Beta Kappa Society</span><time datetime="2026-05">May 2026</time></li><li><span><strong>UROP Research Award</strong><br>University of Minnesota · Spring 2026</span><time datetime="2025-12">Dec 2025</time></li><li><span><strong>Dean’s List</strong><br>University of Minnesota</span><span class="date">2023–2026</span></li></ul>
       </section>
